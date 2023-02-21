@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/crm-dashboard-customer/static/css/main.cdbd1316.css",
+    "main.css": "/crm-dashboard-customer/static/css/main.6f898d70.css",
     "main.js": "/crm-dashboard-customer/static/js/main.a24e0f25.js",
     "static/media/avatar.png": "/crm-dashboard-customer/static/media/avatar.a6540c141141609d69f5.png",
     "index.html": "/crm-dashboard-customer/index.html",
-    "main.cdbd1316.css.map": "/crm-dashboard-customer/static/css/main.cdbd1316.css.map",
+    "main.6f898d70.css.map": "/crm-dashboard-customer/static/css/main.6f898d70.css.map",
     "main.a24e0f25.js.map": "/crm-dashboard-customer/static/js/main.a24e0f25.js.map"
   },
   "entrypoints": [
-    "static/css/main.cdbd1316.css",
+    "static/css/main.6f898d70.css",
     "static/js/main.a24e0f25.js"
   ]
 }
