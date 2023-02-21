@@ -1,0 +1,203 @@
+.customer {
+  background: hsla(228, 100%, 99%, 1);
+  width: 100%;
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.customer h1 {
+  margin-bottom: 1rem;
+}
+
+.customer__main {
+  padding: 0 2rem;
+  background: #ffffff;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.customer__main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customer__main-header-left h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsla(166, 79%, 42%, 1);
+}
+
+.custom__main-table {
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+.custom__main-table table {
+  line-height: 4rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custom__main-table th {
+  font-weight: 500;
+  text-align: left;
+  color: hsla(229, 8%, 73%, 1);
+}
+
+.custom__main-table thead::after {
+  content: "";
+  display: block;
+  width: 1000%;
+  margin: 0 -2rem;
+  height: 1px;
+  background: hsla(0, 0%, 93%, 1);
+}
+
+.custom__main-table td {
+  color: hsla(213, 10%, 18%, 1);
+  border-bottom: 1px solid hsla(0, 0%, 93%, 1);
+}
+
+.custom__main-table tr:hover {
+  background: hsla(0, 0%, 99%, 1);
+}
+
+.custom__main-table tbody td:last-child,
+.custom__main-table thead th:last-child {
+  text-align: center;
+}
+
+.customer__status {
+  text-transform: capitalize;
+  border-radius: 4px;
+  padding: 0.3rem 1rem;
+}
+
+.customer__status-active {
+  border: 1px solid hsla(166, 100%, 35%, 1);
+  color: hsla(166, 100%, 26%, 1);
+  background: hsla(166, 79%, 42%, 0.38);
+}
+
+.customer__status-inactive {
+  border: 1px solid hsla(0, 96%, 45%, 1);
+  color: hsla(0, 96%, 45%, 1);
+  background: hsla(0, 100%, 89%, 1);
+}
+
+.custom__main-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.custom__main-pagination p {
+  color: hsla(229, 8%, 73%, 1);
+}
+
+.custom__main-pagination-btn * {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  border: 1px solid hsla(0, 0%, 93%, 1);
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 0.5rem;
+  color: hsla(202, 12%, 29%, 1);
+  background: hsla(0, 0%, 96%, 1);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom__main-pagination-btn .active,
+.custom__main-pagination-btn *:hover {
+  border: 1px solid hsla(253, 81%, 56%, 1);
+  background: hsla(253, 81%, 56%, 1);
+  color: #ffffff;
+}
+
+.custom__main-pagination-btn *:disabled {
+  border: 1px solid hsla(0, 0%, 93%, 1);
+  background: hsla(0, 0%, 99%, 1);
+  color: hsla(202, 12%, 29%, 1);
+  cursor: default;
+}
+
+.customer__main-header-search {
+  background: hsla(220, 100%, 99%, 1);
+  border-radius: 10px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.customer__main-header-search input {
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: hsla(220, 100%, 99%, 1);
+  color: hsla(202, 12%, 29%, 1);
+  outline: none;
+}
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+  .custom__main-table {
+    font-size: 0.8rem;
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
+  .customer {
+    padding: 0.5rem;
+  }
+
+  .customer__main {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .customer__main-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .custom__main-table {
+    font-size: 0.8rem;
+    overflow: scroll;
+  }
+
+  .custom__main-table table {
+    line-height: 2.5rem;
+  }
+
+  .custom__main-table td, .custom__main-table th {
+    white-space: nowrap;
+    padding-right: 1rem;
+  }
+
+  .custom__main-table thead::after {
+    display: none;
+  }
+
+  .custom__main-table thead {
+    color: hsla(213, 10%, 18%, 1);
+    border-bottom: 1px solid hsla(0, 0%, 93%, 1);
+  }
+
+  .custom__main-pagination {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .custom__main-pagination-btn * {
+    font-size: 1rem;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem 0 0;
+  }
+  
+}

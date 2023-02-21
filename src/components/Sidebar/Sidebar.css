@@ -1,0 +1,125 @@
+.sidebar {
+  font-family: "Poppins", sans-serif;
+  width: 300px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+}
+
+.sidebar__content {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.sidebar__header span {
+  font-size: 0.8rem;
+  color: hsla(0, 0%, 51%, 1);
+}
+
+.sidebar__content ul {
+  color: hsla(229, 18%, 64%, 1);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0;
+}
+
+.sidebar__content ul li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sidebar__content ul li a {
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sidebar__content ul .active {
+  background: hsla(253, 81%, 56%, 1);
+  color: #fff;
+}
+
+.sidebar__footer {
+  display: flex;
+}
+
+.sidebar__footer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.sidebar__footer-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar__footer-about .role {
+  font-size: 0.8rem;
+  line-height: 1;
+  color: hsla(0, 0%, 46%, 1);
+}
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar__content ul li {
+    padding: 0.5rem;
+  }
+
+  .sidebar__logo {
+    width: 100%;
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0px -10px 60px rgba(226, 236, 249, 0.5);
+  }
+
+  .menu__button {
+    display: block;
+    height: 30px;
+    margin-left: auto;
+    align-self: center;
+  }
+
+  .menu__button img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .sidebar__header {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .sidebar__content {
+    margin-top: 2rem;
+    flex-direction: column-reverse;
+  }
+
+  .sidebar__logo {
+    width: 50%;
+  }
+}

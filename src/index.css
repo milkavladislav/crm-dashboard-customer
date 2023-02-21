@@ -1,13 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  width: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-white: #fff;
+  --color-black: hsla(0, 0%, 0%, 1);
+  --color-dark-grey: hsla(0, 0%, 18%, 1);
+  --color-grey: hsla(0, 0%, 28%, 1);
+  --color-light-transparent-grey: hsla(0, 0%, 100%, 0.3);
+  --color-light-grey: hsla(0, 0%, 100%, 0.6);
+  --color-white-grey: hsla(0, 0%, 61%, 1);
+  --color-orange: hsla(32, 100%, 56%, 1);
+  --color-background-grey: hsla(0, 0%, 96%, 1);
+  --color-text-grey: hsla(0, 0%, 43%, 1);
+  --color-text-background-grey: hsla(0, 0%, 43%, 0.1);
+
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+
+  --color-light: rgba(255, 255, 255, 0.6);
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
 }
