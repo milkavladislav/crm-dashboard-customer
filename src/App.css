@@ -4,14 +4,9 @@
   min-height: 100vh;
 }
 
-
-/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
-@media screen and (max-width: 1024px) {
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
   .App {
     flex-direction: column;
   }
-}
-
-/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
-@media screen and (max-width: 600px) {
 }
